@@ -28,12 +28,12 @@ const login = (props) => {
       />
       <Button
         title='Log in '
-        onPress={() => props.navigation.push('anotherPage')}
+        onPress={() => props.navigation.navigate('anotherPage')}
       />
 
       <Button
         title='Sign In '
-        onPress={() => props.navigation.push('SignIn')}
+        onPress={() => props.navigation.navigate('SignIn')}
       />
     </View>
 

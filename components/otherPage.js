@@ -26,7 +26,7 @@ const otherPage =(props)=>{
             />
             <Button
             title='Sign In '
-            onPress={()=> props.navigation.push('anotherPage')}
+            onPress={()=> props.navigation.navigate('anotherPage')}
             />
         </View>
       );

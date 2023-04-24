@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet,Button } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet,Button,Image } from 'react-native';
+
 
 const mainPage =(props)=> {
 
@@ -14,6 +15,12 @@ const mainPage =(props)=> {
   );
 }
 const styles = StyleSheet.create({
+    image:{
+        width:150,
+        height:150,
+        marginBottom:20,
+        marginTop:50,
+    },
   container: {
     flex: 1,
     justifyContent: 'center',
