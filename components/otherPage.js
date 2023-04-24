@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet,TextInput,Button } from 'react-native';
-import {Username,Password,setMyUSername,SetMYPassword} from './login';
+
 
 
 const otherPage =(props)=>{
@@ -12,22 +12,17 @@ const otherPage =(props)=>{
             <TextInput
                 style={styles.input}
                 placeholder="Username"
-                value={Username}
-                onChangeText={(Text) => setMyUSername(Text)}
             />
             <Text> email </Text>
             <TextInput
                 style={styles.input}
                 placeholder="Password"
-                value={email}
-                onChangeText={(Text) => setMyEmail(Text)}
+
             />
             <Text> Password </Text>
             <TextInput
                 style={styles.input}
                 placeholder="Password"
-                value={Password}
-                onChangeText={(Text) => SetMYPassword(Text)}
             />
             <Button
             title='Sign In '
@@ -36,12 +31,6 @@ const otherPage =(props)=>{
         </View>
       );
 }
-function setMyEmail(value) {
-    Setemail(value);
-  }
-  function getMyEmail() {
-    return email;
-  }
 const styles = StyleSheet.create({
     container: {
         flex: 1,

@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet,Button } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Button } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import anotherPage from './anotherPage';
 
-const login =(props)=> {
+const login = (props) => {
   const [Username, setUsername] = useState('');
   const [Password, setPassword] = useState('');
 
 
-  const handleLogin = () => {
-    console.log('Username:', username);
-    console.log('Password:', password);
-  };
 
   return (
     <View style={styles.container}>
@@ -30,27 +26,18 @@ const login =(props)=> {
         value={Password}
         onChangeText={(Text) => setPassword(Text)}
       />
-     <Button
-      title='Log in '
-      onPress={()=> props.navigation.push('anotherPage')}
-      />
-      
       <Button
-      title='Sign In '
-      onPress={()=> props.navigation.push('SignIn')}
+        title='Log in '
+        onPress={() => props.navigation.push('anotherPage')}
       />
-      </View>
+
+      <Button
+        title='Sign In '
+        onPress={() => props.navigation.push('SignIn')}
+      />
+    </View>
 
   );
-}
-function setMyUSername(value) {
-  setUsername(value);
-}
-function getMyUsername() {
-  return Username;
-}
-function SetMYPassword(value){
-  setPassword(value);
 }
 const styles = StyleSheet.create({
   container: {

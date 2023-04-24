@@ -7,6 +7,7 @@ import anotherPage from './components/anotherPage';
 import login from './components/login';
 import otherPage from './components/otherPage';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import mainPage from './components/mainPage';
 const Tab = createBottomTabNavigator();
 const {Navigator,Screen} = createStackNavigator();
 
@@ -17,6 +18,7 @@ export default function App() {
     <>
       <NavigationContainer>
         <Tab.Navigator>
+          <Tab.Screen name="MainPage" component={mainPage}/>
           <Tab.Screen name="Login" component={login} />
           <Tab.Screen name='anotherPage' component={anotherPage}/>
           <Tab.Screen name='SignIn' component={otherPage}/>
