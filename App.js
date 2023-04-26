@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import anotherPage from './components/anotherPage';
 import login from './components/login';
+import pokedex from './components/pokedex';
 import otherPage from './components/otherPage';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import mainPage from './components/mainPage';
@@ -22,6 +23,7 @@ export default function App() {
           <Tab.Screen name="Login" component={login} />
           <Tab.Screen name='anotherPage' component={anotherPage}/>
           <Tab.Screen name='SignIn' component={otherPage}/>
+          <Tab.Screen name='Pokedex' component={pokedex}/>
         </Tab.Navigator>
       </NavigationContainer>
     </>
