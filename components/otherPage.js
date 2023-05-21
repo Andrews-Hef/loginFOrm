@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import { View, Text, StyleSheet,TextInput,Button } from 'react-native';
 
 
 
 const otherPage =(props)=>{
+    const [Username, setUsername] = useState('');
+    const [Password, setPassword] = useState('');
     const [email, Setemail] = useState('');
+    useEffect(() => {
+
+      console.log("FieldName :"+Username);
+      console.log( "password :"+Password );
+      console.log("email :"+ email);
+    },[Username,Password,email]);
     return (
         <View style={styles.container}>
             
@@ -12,17 +20,20 @@ const otherPage =(props)=>{
             <TextInput
                 style={styles.input}
                 placeholder="Username"
+                onChangeText={(e) => setUsername(e)}
             />
             <Text> email </Text>
             <TextInput
                 style={styles.input}
                 placeholder="Password"
-
+                onChangeText={(email) => Setemail(email)}
             />
             <Text> Password </Text>
             <TextInput
                 style={styles.input}
                 placeholder="Password"
+                onChangeText={(e) => setPassword(e)}
+
             />
             <Button
             title='Sign In '

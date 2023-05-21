@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet,Button,Image,Dimensions } from 'react-native';
 import Carousel from './carousel';
 
+
 const mainPage =(props)=> {
 
-
   return (
-    <View style={styles.container}>
+      <View style={styles.container}>
         <Text style={styles.titre}>Bienvenue sur mon application !</Text>
         <Text style={styles.texte}>Bonjour</Text>
         <Carousel/>

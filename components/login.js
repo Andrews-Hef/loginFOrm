@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Button } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
@@ -9,7 +9,11 @@ const login = (props) => {
   const [Password, setPassword] = useState('');
 
 
-
+  useEffect(() => {
+    console.log("FieldName :"+Username);
+    console.log( "password :"+Password );
+  },[Username,Password]);
+  
   return (
     <View style={styles.container}>
       <Text >nom </Text>

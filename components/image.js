@@ -3,7 +3,7 @@ import { Image, StyleSheet, TouchableOpacity } from 'react-native';
 
   const Logo =(props) => {
     return (
-        <TouchableOpacity onPress={() => alert('Img')}>
+        <TouchableOpacity onPress={() => alert(props.alert)}>
             <Image style={styles.image} source={props.source} />
         </TouchableOpacity>
     );
