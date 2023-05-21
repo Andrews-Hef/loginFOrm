@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet,Button,Image } from 'react-native';
-
+import { View, Text, TextInput, TouchableOpacity, StyleSheet,Button,Image,Dimensions } from 'react-native';
+import Carousel from './carousel';
 
 const mainPage =(props)=> {
-
 
 
   return (
     <View style={styles.container}>
         <Text style={styles.titre}>Bienvenue sur mon application !</Text>
         <Text style={styles.texte}>Bonjour</Text>
+        <Carousel/>
+        <Text style={styles.texte}>Ici,sa scroll</Text>
     </View>
 
   );
