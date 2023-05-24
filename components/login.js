@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import anotherPage from './anotherPage';
 
-const login = (props) => {
+const Login = (props) => {
   const [Username, setUsername] = useState('');
   const [Password, setPassword] = useState('');
 
@@ -74,4 +74,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default login;
+export default Login;

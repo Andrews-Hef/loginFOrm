@@ -3,7 +3,7 @@ import { View, Text, StyleSheet,TextInput,Button } from 'react-native';
 
 
 
-const otherPage =(props)=>{
+const OtherPage =(props)=>{
     const [Username, setUsername] = useState('');
     const [Password, setPassword] = useState('');
     const [email, Setemail] = useState('');
@@ -72,4 +72,4 @@ const styles = StyleSheet.create({
         textAlign: 'center',
       },
   });
-  export default otherPage;
+  export default OtherPage;

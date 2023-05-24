@@ -6,7 +6,7 @@ import baignoire from '../assets/baignoire.jpg';
 import remorque from '../assets/remorque.png';
 
 
-const cadis =(props)=> {
+const Cadis =(props)=> {
 
   return (
       <ScrollView >
@@ -75,4 +75,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default cadis;
+export default Cadis;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, Image, StyleSheet, ScrollView,Modal } from 'react-native';
 import axios from 'axios';
 
-const pokedex = () => {
+const Pokedex = () => {
   const [pokemons, setPokemons] = useState([]);
   const [modalVisible, setModalVisible] = useState(false);
 
@@ -28,7 +28,7 @@ const pokedex = () => {
 
       {pokemons.map((pokemon, index) => (
         <View key={index} style={styles.pokemon}>
-          <Image source={{ uri: pokemon.sprites.front_default }} style={styles.image} />
+          <Image source={{ uri: pokemon.sprites.front_default }} style={styles.image} alert={pokemon.name}/>
           <Text style={styles.name}>{pokemon.name}</Text>
         </View>
       ))}
@@ -57,4 +57,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default pokedex;
+export default Pokedex;

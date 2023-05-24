@@ -3,7 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet,Button,Image,Dimens
 import Carousel from './carousel';
 
 
-const mainPage =(props)=> {
+const MainPage =(props)=> {
 
   return (
       <View style={styles.container}>
@@ -52,4 +52,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default mainPage;
+export default MainPage;

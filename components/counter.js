@@ -6,7 +6,7 @@ import { StyleSheet, Text, View,Button } from 'react-native';
 import React, { useState, useEffect } from 'react';
 
 
-const counter =(props)=> {
+const Counter =(props)=> {
 
   const [count, setCount] = useState(0);
   const [lastcount, setString ]= useState("string");
@@ -42,4 +42,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default counter;
+export default Counter;

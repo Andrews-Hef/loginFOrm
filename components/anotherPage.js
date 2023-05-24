@@ -3,9 +3,12 @@ import { View, Text, StyleSheet } from 'react-native';
 import {Username,Password} from './login';
 import{email} from"./otherPage";
 
-const anotherPage =(props)=>{
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+const AnotherPage =(props)=>{
   return (
     <View style={styles.container}>
+      <Icon name="rocket" size={30} color="#900" />
       <Text>Profile</Text>
       <Text>Nom:</Text>
       <Text>{Username}</Text>
@@ -23,4 +26,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default anotherPage;
+export default AnotherPage;
